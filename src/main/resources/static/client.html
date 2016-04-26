@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> OAuth 2 authorization via facebook </title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap-social.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+            integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+        crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" ></script>
+    <script src="client.js"></script>
+
+    <style type="text/css">
+        .btn-facebook:hover,
+        .btn-facebook:visited{
+            color: white;
+        }
+        .btn{
+            min-width: 250px;
+            max-width: 250px;
+            margin: 20px;
+        }
+    </style>
+</head>
+    <body>
+        <h2 style="margin: 10px">  OAuth 2 authorization via facebook </h2>
+
+        <a onclick="loginFacebook()" class="ml btn btn-block btn-social btn-lg btn-facebook">
+            <i class="fa fa-facebook"></i>
+            Login via Facebook
+        </a>
+
+        <button class="btn btn-block" onclick="callHello()">Hello</button>
+        <button class="btn btn-block" onclick="callHelloSecure()">Hello Secure</button>
+        <button class="btn btn-block" onclick="getUserData()">Me</button>
+        <button class="btn btn-block btn-danger" onclick="logout()">Logout</button>
+    </body>
+</html>

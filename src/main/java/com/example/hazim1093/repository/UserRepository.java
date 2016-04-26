@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Created by hazim on 4/26/16
  */
-public interface UserRepository extends JpaRepository<User, Long> {
+interface UserRepository extends JpaRepository<User, Long> {
 	@Transactional(readOnly = true)
 	User findByFacebookId(String facebookId);
 }
